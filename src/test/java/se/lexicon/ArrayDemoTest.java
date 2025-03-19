@@ -1,8 +1,8 @@
 package se.lexicon;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 
 public class ArrayDemoTest {
 
@@ -15,15 +15,20 @@ public class ArrayDemoTest {
     //5. an array with duplicate numbers
     //....
 
-
     @Test
-    @DisplayName("Find the maximum number in an array of positive numbers")
-    public void findFindMaxNumberWithPositiveNumbers(){
+    @DisplayName("Find the maximum number in an array with positive numbers")
+    public void findMaxNumberWithPositiveNumbers(){
+
         int[] numbers = {1, 5, 3, 9, 2};
+
+        int expected = 9;
+
+        int actual = ArrayDemo.findMaxNumber(numbers);
+
+        Assertions.assertEquals(expected, actual);
+
+
 
 
     }
-
-
-
 }
