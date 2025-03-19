@@ -64,6 +64,23 @@ public class ArrayDemo {
         System.out.println("Expanded Array: ");
         System.out.println(Arrays.toString(newArray));
 
+    }
+
+    public static int findMaxNumber(int[] numbers){
+        if (numbers.length == 0){
+            throw new IllegalArgumentException("Array should not be empty");
+        }
+
+        int maxNumber = numbers[0];
+        for(int i = 1 ; i < numbers.length ; i++){
+            if(numbers[i] > maxNumber){
+                maxNumber = numbers[i];
+            }
+
+        }
+        return maxNumber;
+
+
 
     }
 }
