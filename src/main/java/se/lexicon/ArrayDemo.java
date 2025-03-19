@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
 
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class ArrayDemo {
         char[] letters = {1, 2, 3, 4, 5};
 
 
-        ex2();
+        ex3();
 
     }
 
@@ -37,10 +39,30 @@ public class ArrayDemo {
         }}
         System.out.println("----------------------------");
         for ( int number : numbers){
+            if(number == 200){
+                number = 5000;
+            }
             System.out.println(number);
         }
 
+        System.out.println("--------------------------");
+        System.out.println(Arrays.toString(numbers));
 
+    }
+
+    public static void ex3(){
+        int[] originalArray = {2, 5, 8, 1, 9};
+        System.out.println("Original Array: ");
+        System.out.println(Arrays.toString(originalArray));
+
+        int[] newArray = new int[originalArray.length +1];
+        for (int i = 0 ; i< originalArray.length ; i++ ){
+            newArray[i] = originalArray[i];
+        }
+        newArray[newArray.length -1] = 100;
+
+        System.out.println("Expanded Array: ");
+        System.out.println(Arrays.toString(newArray));
 
 
     }
