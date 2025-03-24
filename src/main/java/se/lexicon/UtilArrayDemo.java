@@ -7,7 +7,7 @@ import static se.lexicon.ArrayDemo.ex1;
 public class UtilArrayDemo {
 
     public static void main(String[] args) {
-        ex3();
+        ex1();
     }
 
     public static void ex1() {

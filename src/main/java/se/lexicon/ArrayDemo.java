@@ -6,12 +6,13 @@ public class ArrayDemo {
 
     public static void main(String[] args) {
 
+
         int[] numbers = new int[3];
         String[] names = new String[3];
         char[] letters = {1, 2, 3, 4, 5};
 
 
-        ex3();
+        ex1();
 
     }
 
